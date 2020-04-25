@@ -10,7 +10,7 @@ SERVER_NAME = os.environ['SERVER_NAME']
 def run_server():
   serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-  serversocket.bind(('127.0.0.1', PORT))
+  serversocket.bind(('0.0.0.0', PORT))
   serversocket.listen(5)
 
   
