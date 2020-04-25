@@ -9,4 +9,6 @@ WORKDIR "/docker-examples"
 
 RUN apt install -y python3
 
+EXPOSE 8080
+
 CMD ["python3", "example-02-duplicating-servers/server/server.py"]
