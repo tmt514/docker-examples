@@ -9,4 +9,4 @@ WORKDIR "/docker-examples"
 
 RUN apt install -y python3
 
-CMD ["python3", "example-02-simple-server/server/server.py"]
+CMD ["python3", "example-02-duplicating-servers/server/server.py"]
